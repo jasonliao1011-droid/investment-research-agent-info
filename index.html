@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about a private, local Taiwan equity market research tool and its use of public YouTube comments.">
+  <title>Investment Research Agent</title>
+  <style>
+    :root { color-scheme: light; --ink: #172033; --muted: #526078; --line: #d9e0ea; --accent: #155eef; --paper: #fff; --wash: #f4f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--wash); font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header, main, footer { width: min(880px, calc(100% - 36px)); margin-inline: auto; }
+    header { padding: 30px 0 18px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { color: var(--ink); font-weight: 700; text-decoration: none; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    a { color: var(--accent); }
+    nav a { color: var(--muted); }
+    main { margin: 24px auto 48px; padding: clamp(26px, 6vw, 56px); background: var(--paper); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 12px 34px #1720330b; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
+    h1 { margin: 8px 0 14px; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.12; letter-spacing: -.035em; }
+    h2 { margin-top: 34px; font-size: 1.15rem; }
+    .lead { color: var(--muted); font-size: 1.15rem; max-width: 65ch; }
+    .notice { margin: 28px 0; padding: 18px 20px; background: #eef4ff; border-left: 4px solid var(--accent); border-radius: 8px; }
+    .notice p { margin: 0; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button { display: inline-block; padding: 10px 15px; border: 1px solid var(--line); border-radius: 9px; text-decoration: none; font-weight: 650; }
+    .button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    footer { padding: 0 0 32px; color: var(--muted); font-size: .92rem; }
+    @media (max-width: 560px) { header { align-items: flex-start; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="./">Investment Research Agent</a>
+    <nav aria-label="Main navigation"><a href="./privacy/">Privacy Policy</a><a href="./terms/">Terms</a></nav>
+  </header>
+  <main>
+    <div class="eyebrow">Private local research tool</div>
+    <h1>Investment Research Agent</h1>
+    <p class="lead">A locally operated tool for the project owner's personal Taiwan equity market research. It is not a public product, brokerage, investment advisory, or trading service.</p>
+    <div class="notice"><p><strong>Review status:</strong> YouTube data collection and analysis remain disabled while the owner seeks a policy determination for the proposed use. This page does not imply that YouTube or Google has approved that use.</p></div>
+    <h2>Proposed research use</h2>
+    <p>If enabled after the required review, the tool would use the documented YouTube Data API v3 to retrieve public comments from a bounded list of finance-related channels and videos selected through human review. It would summarize discussion topics, attention, and sentiment at an aggregate level, then compare those signals statistically with public Taiwan stock prices and company announcements.</p>
+    <p>The purpose is to study Taiwan equity market discussion. It does not provide channel or video performance services, identify or profile commenters, infer sensitive traits, sell YouTube data, or place trades automatically.</p>
+    <h2>Information and policies</h2>
+    <p>See the <a href="./privacy/">Privacy Policy</a> for data categories, local processing, and retention. The proposed cross-source research use is subject to Google's review and applicable YouTube policies.</p>
+    <div class="links"><a class="button primary" href="./privacy/">Read the Privacy Policy</a><a class="button" href="./terms/">Terms</a></div>
+  </main>
+  <footer>Last updated October 2, 2026. This site is a disclosure page; it does not provide access to the private research application.</footer>
+</body>
+</html>

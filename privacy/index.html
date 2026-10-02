@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy disclosures for the private Investment Research Agent and its proposed use of public YouTube API data.">
+  <title>Privacy Policy — Investment Research Agent</title>
+  <style>
+    :root { color-scheme: light; --ink: #172033; --muted: #526078; --line: #d9e0ea; --accent: #155eef; --paper: #fff; --wash: #f4f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--wash); font: 16px/1.68 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header, main, footer { width: min(880px, calc(100% - 36px)); margin-inline: auto; }
+    header { padding: 30px 0 18px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { color: var(--ink); font-weight: 700; text-decoration: none; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    a { color: var(--accent); }
+    nav a { color: var(--muted); }
+    main { margin: 24px auto 48px; padding: clamp(26px, 6vw, 56px); background: var(--paper); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 12px 34px #1720330b; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
+    h1 { margin: 8px 0 10px; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.15; letter-spacing: -.03em; }
+    h2 { margin: 32px 0 8px; font-size: 1.18rem; }
+    p, ul { max-width: 72ch; }
+    .muted { color: var(--muted); }
+    .notice { margin: 24px 0; padding: 16px 19px; background: #eef4ff; border-left: 4px solid var(--accent); border-radius: 8px; }
+    .notice p { margin: 0; }
+    footer { padding: 0 0 32px; color: var(--muted); font-size: .92rem; }
+    @media (max-width: 560px) { header { align-items: flex-start; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Investment Research Agent</a>
+    <nav aria-label="Main navigation"><a href="../">Overview</a><a href="../terms/">Terms</a></nav>
+  </header>
+  <main>
+    <div class="eyebrow">Privacy</div>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective and last updated: October 2, 2026</p>
+    <div class="notice"><p><strong>Current status:</strong> YouTube Data API collection and analysis are disabled while the owner seeks a policy determination for this proposed cross-source research use. The practices below describe the intended handling if collection is later approved and enabled.</p></div>
+
+    <h2>Who this policy covers</h2>
+    <p>Investment Research Agent is software operated locally by one individual for personal Taiwan equity market research. It is not a public application and has no external users or user accounts. This policy covers the software's proposed use of YouTube Data API Services and this static disclosure website.</p>
+
+    <h2>YouTube API Services and data accessed</h2>
+    <p>If enabled, the software will use only documented YouTube Data API v3 methods to access public channel, video, and comment information. Channel discovery, when used, returns suggestions for human review; a person must approve a channel before comments are collected. The software does not scrape YouTube pages or use YouTube sign-in credentials or OAuth.</p>
+    <p>For approved public videos and comments, the software may process comment text, comment and thread IDs, publication times, public like and reply counts, and limited publisher/video information such as channel or video IDs, channel names, and video titles. These fields support source attribution, deduplication, deletion tracking, and research analysis.</p>
+    <p>The software does not collect or store commenters' display names, commenter channel IDs, profile URLs, or avatars. It does not attempt to identify a commenter or connect a comment to a personal profile.</p>
+
+    <h2>How information is used</h2>
+    <p>Comment text is analyzed locally on the project owner's computer to derive aggregate discussion topics, attention, and sentiment about Taiwan equity market discussion. Those aggregate signals may be statistically compared with public Taiwan stock prices and public company announcements. They are the owner's independent analysis, not metrics published by YouTube.</p>
+    <p>This is cross-source market research, not an assessment of viewer satisfaction with YouTube channels or videos. Its eligibility under Google's derived-metrics policies has not been determined; no use is represented as approved.</p>
+    <p>The software does not profile individuals, infer sensitive traits, sell or disclose YouTube API data to others, use the data to train or fine-tune a model, or place brokerage trades. Analysis uses a locally hosted model; no third-party cloud model or advertising analytics service is used by the software.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Raw comment text, video-title text, and text evidence snippets are designed to be deleted no later than 30 days after collection. The current software design preserves comment/source IDs, timestamps, public counts, ticker mappings, and structured per-comment research fields locally after that text purge; those records do not currently have a separate automatic expiry. Reports use aggregate statistics and do not include comment text, titles, or commenter identity.</p>
+    <p>Because the preserved identifiers and structured records may be subject to YouTube API data-storage limits, the owner will not enable collection until the applicable policy permits this handling or the retention behavior is changed to meet the policy. Any extended storage of public statistics or derived metrics would occur only if permitted for the approved use case and within the retention period allowed by the then-current policies. This policy does not claim permission to retain data beyond the standard limits.</p>
+
+    <h2>Sharing, security, and access</h2>
+    <p>The research software is local to the owner's computer and is not distributed as a public service. YouTube data are not sold, shared with advertisers, or made available to other users. The owner uses local access controls and removes API data according to the retention rules above. GitHub Pages hosts this disclosure website; GitHub may process ordinary technical request information under its own privacy terms.</p>
+
+    <h2>This website</h2>
+    <p>This static site does not provide application accounts or collect form submissions. It uses no advertising pixels, third-party analytics scripts, or tracking cookies. The hosting provider may process standard web request and security logs. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, contact the maintainer through the <a href="https://github.com/jasonliao1011-droid/investment-research-agent-info/issues" rel="noopener">project repository</a>. Please do not post personal or sensitive information in a public issue.</p>
+
+    <h2>Third-party terms and privacy information</h2>
+    <ul>
+      <li><a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" rel="noopener">YouTube API Services Terms of Service</a></li>
+      <li><a href="https://developers.google.com/youtube/terms/developer-policies" rel="noopener">YouTube API Services Developer Policies</a></li>
+      <li><a href="https://developers.google.com/youtube/terms/derived-metrics-policy" rel="noopener">Additional policies for derived metrics and data storage</a></li>
+      <li><a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a></li>
+      <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>This policy will be updated if the software's data practices or approved use change. Any material change in YouTube API use will be reviewed against Google's current policies before collection resumes.</p>
+  </main>
+  <footer><a href="../">Overview</a> · <a href="../terms/">Terms</a></footer>
+</body>
+</html>
