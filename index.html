@@ -22,11 +22,17 @@
     .lead { color: var(--muted); font-size: 1.15rem; max-width: 65ch; }
     .notice { margin: 28px 0; padding: 18px 20px; background: #eef4ff; border-left: 4px solid var(--accent); border-radius: 8px; }
     .notice p { margin: 0; }
+    .api-attribution { display: flex; align-items: center; gap: 22px; margin-top: 32px; padding: 18px 20px; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
+    .api-attribution h2 { margin: 0 0 6px; }
+    .api-attribution p { margin: 0; color: var(--muted); }
+    .api-attribution a { display: inline-flex; flex: 0 0 auto; align-items: center; padding: 8px; background: #fff; border-radius: 6px; }
+    .api-attribution img { display: block; width: 190px; height: auto; }
     .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
     .button { display: inline-block; padding: 10px 15px; border: 1px solid var(--line); border-radius: 9px; text-decoration: none; font-weight: 650; }
     .button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
     footer { padding: 0 0 32px; color: var(--muted); font-size: .92rem; }
     @media (max-width: 560px) { header { align-items: flex-start; flex-direction: column; } }
+    @media (max-width: 560px) { .api-attribution { align-items: flex-start; flex-direction: column; } }
   </style>
 </head>
 <body>
@@ -42,10 +48,19 @@
     <h2>Proposed research use</h2>
     <p>If enabled after the required review, the tool would use the documented YouTube Data API v3 to retrieve public comments from a bounded list of finance-related channels and videos selected through human review. It would summarize discussion topics, attention, and sentiment at an aggregate level, then compare those signals statistically with public Taiwan stock prices and company announcements.</p>
     <p>The purpose is to study Taiwan equity market discussion. It does not provide channel or video performance services, identify or profile commenters, infer sensitive traits, sell YouTube data, or place trades automatically.</p>
+    <section class="api-attribution" aria-labelledby="api-attribution-heading">
+      <a href="https://www.youtube.com/" aria-label="Visit YouTube">
+        <img src="./assets/youtube-logo-fullcolor-almostblack.png" alt="YouTube">
+      </a>
+      <div>
+        <h2 id="api-attribution-heading">API source attribution</h2>
+        <p>YouTube Data API Services are the planned source for public comments. Collection and analysis remain disabled pending a policy determination. YouTube does not endorse this research.</p>
+      </div>
+    </section>
     <h2>Information and policies</h2>
     <p>See the <a href="./privacy/">Privacy Policy</a> for data categories, local processing, and retention. The proposed cross-source research use is subject to Google's review and applicable YouTube policies.</p>
     <div class="links"><a class="button primary" href="./privacy/">Read the Privacy Policy</a><a class="button" href="./terms/">Terms</a></div>
   </main>
-  <footer>Last updated October 2, 2026. This site is a disclosure page; it does not provide access to the private research application.</footer>
+  <footer>Last updated October 3, 2026. This site is a disclosure page; it does not provide access to the private research application.</footer>
 </body>
 </html>
